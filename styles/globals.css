@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en navegadores basados en WebKit (Chrome, Safari) */
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* Oculta el scrollbar en Internet Explorer y Edge */
+    scrollbar-width: none; /* Oculta el scrollbar en navegadores basados en WebKit (Chrome, Safari) y Firefox */
+  }
